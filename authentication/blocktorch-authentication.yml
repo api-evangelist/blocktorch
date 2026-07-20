@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: openapi/blocktorch-hardhat-forking-openapi.yml
+docs: https://docs.blocktorch.xyz/concepts/data-sources/local-forks/hardhat-forking-api.md
+notes: >-
+  API access uses a project-scoped API key passed in the x-api-key header. Keys
+  are created on the Settings page of the Blocktorch project dashboard. Platform
+  (dashboard) sign-in additionally supports email magic-link, Google/GitHub SSO,
+  and Web3 wallet, but those govern the app UI, not the documented API.
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: ApiKeyAuth
+  type: apiKey
+  in: header
+  parameter: x-api-key
+  description: API key created on the Settings page of your Blocktorch project dashboard. Include
+    it in the header of every request.
+  sources:
+  - openapi/blocktorch-hardhat-forking-openapi.yml
