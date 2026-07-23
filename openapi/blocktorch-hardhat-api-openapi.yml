@@ -1,0 +1,125 @@
+openapi: 3.0.3
+info:
+  title: Blocktorch Forking Hardhat API
+  description: Manage Hardhat fork instances dynamically through Blocktorch's managed Hardhat forking service. Through this API, users can create and delete Hardhat instances programmatically, providing a seamless integration for continuous development and testing of dApps against forked EVM chains.
+  version: 1.0.0
+  contact:
+    name: Blocktorch
+    email: contact@blocktorch.xyz
+    url: https://docs.blocktorch.xyz
+  x-apievangelist-generated: '2026-07-18'
+  x-apievangelist-method: searched
+  x-apievangelist-source: https://docs.blocktorch.xyz/concepts/data-sources/local-forks/hardhat-forking-api.md
+servers:
+- url: https://c6yaznpyf4.execute-api.us-east-1.amazonaws.com/prod/api
+  description: Production (AWS API Gateway)
+security:
+- ApiKeyAuth: []
+tags:
+- name: Hardhat
+  description: Manage managed Hardhat fork instances.
+paths:
+  /hardhat/{projectId}:
+    post:
+      operationId: createHardhatInstance
+      summary: Create a managed Hardhat instance
+      description: Create a new managed Hardhat fork instance for the given project. The request body provides the Ethereum provider URL the fork is created against. On success the API returns the instanceId of the new fork.
+      tags:
+      - Hardhat
+      parameters:
+      - name: projectId
+        in: path
+        required: true
+        description: The Blocktorch project the Hardhat instance belongs to.
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateHardhatRequest'
+      responses:
+        '200':
+          description: Hardhat instance created.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateHardhatResponse'
+        '400':
+          description: Bad request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /hardhat/{projectId}/{chainId}:
+    delete:
+      operationId: deleteHardhatInstance
+      summary: Delete a managed Hardhat instance
+      description: Delete the managed Hardhat fork instance identified by the project and chain id. Returns a confirmation message on success.
+      tags:
+      - Hardhat
+      parameters:
+      - name: projectId
+        in: path
+        required: true
+        description: The Blocktorch project the Hardhat instance belongs to.
+        schema:
+          type: string
+      - name: chainId
+        in: path
+        required: true
+        description: The chain id of the Hardhat instance to delete.
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Hardhat instance deleted.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Message'
+        '400':
+          description: Bad request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    Message:
+      type: object
+      properties:
+        message:
+          type: string
+          description: Confirmation message.
+    CreateHardhatResponse:
+      type: object
+      properties:
+        instanceId:
+          type: string
+          description: Identifier of the created Hardhat fork instance.
+        message:
+          type: string
+          description: Confirmation message.
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+          description: Error message describing why the request failed.
+    CreateHardhatRequest:
+      type: object
+      required:
+      - providerUrl
+      properties:
+        providerUrl:
+          type: string
+          description: The Ethereum provider URL the Hardhat fork is created against.
+          format: uri
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: API key created on the Settings page of your Blocktorch project dashboard. Include it in the header of every request.
