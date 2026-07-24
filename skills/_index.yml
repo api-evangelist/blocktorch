@@ -1,0 +1,9 @@
+generated: '2026-07-18'
+method: generated
+skills:
+- file: blocktorch-manage-hardhat-fork.md
+  name: Manage a Blocktorch managed Hardhat fork
+  api: openapi/blocktorch-hardhat-forking-openapi.yml
+  operations:
+  - createHardhatInstance
+  - deleteHardhatInstance

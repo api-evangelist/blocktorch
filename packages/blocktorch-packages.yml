@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/org/blocktorch
+packages:
+- language: javascript
+  registry: npm
+  name: "@blocktorch/0xdragon"
+  version: 2.1.0
+  url: https://www.npmjs.com/package/@blocktorch/0xdragon
+  repository: https://github.com/blocktorch-xyz/dragon
+  install: npm install @blocktorch/0xdragon
+  description: Track web3 transactions in any JS project.
+  kind: sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: "@blocktorch/debugger"
+  version: 1.0.1
+  url: https://www.npmjs.com/package/@blocktorch/debugger
+  install: npm install -g @blocktorch/debugger
+  description: Blocktorch debugger CLI (binary "blocktorch").
+  kind: cli
+  official: true
+- language: javascript
+  registry: npm
+  name: "@blocktorch/optimism-batch-decoder"
+  version: 1.0.1
+  url: https://www.npmjs.com/package/@blocktorch/optimism-batch-decoder
+  repository: https://github.com/blocktorch-xyz/optimism-batch-decoder
+  install: npm install @blocktorch/optimism-batch-decoder
+  description: Decode Optimism rollup batcher transactions.
+  kind: library
+  official: true

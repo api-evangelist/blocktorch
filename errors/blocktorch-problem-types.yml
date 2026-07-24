@@ -1,0 +1,17 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/blocktorch-hardhat-forking-openapi.yml
+format: custom-json
+envelope:
+  field: error
+  media_type: application/json
+  notes: 4xx responses return a JSON object with an "error" string. Not RFC 9457 problem+json.
+problems:
+- status: 400
+  title: Bad request
+  description: The create request was invalid (e.g. missing or malformed providerUrl).
+  source_operation: openapi/blocktorch-hardhat-forking-openapi.yml#createHardhatInstance
+- status: 400
+  title: Bad request
+  description: The delete request was invalid (e.g. unknown project or chain id).
+  source_operation: openapi/blocktorch-hardhat-forking-openapi.yml#deleteHardhatInstance

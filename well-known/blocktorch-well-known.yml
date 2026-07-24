@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/ on Blocktorch hosts
+hosts:
+- host: https://docs.blocktorch.xyz
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://c6yaznpyf4.execute-api.us-east-1.amazonaws.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 000
+    note: no response (AWS API Gateway host, no well-known surface)
+  - path: /.well-known/openid-configuration
+    status: 000
+    note: no response
+notes: >-
+  No .well-known discovery documents are published. The marketing host
+  blocktorch.xyz was unreachable over TLS during probing; docs are served from
+  GitBook (docs.blocktorch.xyz).

@@ -1,0 +1,15 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Blocktorch Hardhat Forking API
+  version: 1.0.0
+extends: openapi/blocktorch-hardhat-forking-openapi.yml
+actions:
+- target: $.info
+  update:
+    x-apievangelist-rating: 3
+    x-apievangelist-notes: >-
+      Spec reconstructed by API Evangelist from Blocktorch's published Hardhat
+      Forking API documentation; original provider-published OpenAPI not found.
+- target: $.info
+  update:
+    x-api-evangelist-source: https://docs.blocktorch.xyz/concepts/data-sources/local-forks/hardhat-forking-api.md

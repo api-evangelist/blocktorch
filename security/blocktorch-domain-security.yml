@@ -1,0 +1,12 @@
+generated: '2026-07-18'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: blocktorch.xyz
+  https: false
+domains:
+- domain: blocktorch.xyz
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false

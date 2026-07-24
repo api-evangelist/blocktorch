@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/blocktorch-hardhat-forking-openapi.yml
+docs: https://docs.blocktorch.xyz/concepts/data-sources/local-forks/hardhat-forking-api.md
+authentication:
+  style: api-key
+  location: header
+  parameter: x-api-key
+  reference: authentication/blocktorch-authentication.yml
+media_type: application/json
+versioning:
+  scheme: uri-path
+  evidence: server base path /prod/api (AWS API Gateway stage)
+idempotency:
+  supported: false
+  notes: No idempotency-key header or contract is documented for the Hardhat Forking API.
+pagination:
+  supported: false
+  notes: Documented endpoints are single-resource create/delete; no list/pagination surface.
+error_envelope:
+  shape: object with an "error" string field on 4xx responses
+  reference: errors/blocktorch-problem-types.yml
+rate_limit_signaling:
+  documented: false
+notes: >-
+  Cross-cutting semantics for the documented Hardhat Forking API. Blocktorch is
+  primarily an observability product; this API is the one programmatic surface
+  currently documented.

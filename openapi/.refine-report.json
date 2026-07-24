@@ -1,0 +1,14 @@
+{
+  "provider": "blocktorch",
+  "sources": [
+    "blocktorch-hardhat-api-openapi.yml"
+  ],
+  "outputs": [
+    "blocktorch-hardhat-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

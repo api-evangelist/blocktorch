@@ -1,0 +1,19 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/package/@blocktorch/debugger
+name: blocktorch
+package: "@blocktorch/debugger"
+repository: https://github.com/blocktorch-xyz/debugger-cli
+language: javascript
+description: >-
+  First-party Blocktorch debugger command-line tool, distributed as the npm
+  package @blocktorch/debugger. Installs a global "blocktorch" binary used to
+  debug web3 / smart-contract execution locally.
+install:
+- method: npm
+  command: npm install -g @blocktorch/debugger
+binary: blocktorch
+notes: >-
+  Command surface is not published in a structured reference; the binary name
+  and install method are captured from the npm package and the blocktorch-xyz
+  GitHub organization (debugger-cli repository).

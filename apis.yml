@@ -1,25 +1,112 @@
 aid: blocktorch
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blocktorch.png
 name: Blocktorch
-description: Blocktorch is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Blocktorch is an end-to-end observability platform built specifically for
+  web3 services and decentralized applications (dApps). It gives engineering
+  teams real-time monitoring of smart contract events, state variables and
+  transaction data, plus log search, alerting, tracing, dashboarding, debugging
+  and collaboration across multiple layers of the web3 stack (EVM chains,
+  roll-ups, local Hardhat forks, oracles, account-abstraction modules and
+  decentralized storage). Blocktorch also exposes a Hardhat Forking API for
+  programmatically managing managed Hardhat fork instances for continuous
+  development and testing. Backed by Speedinvest.
 url: https://raw.githubusercontent.com/api-evangelist/blocktorch/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - speedinvest
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enrichment-pipeline
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Web3
+- Observability
+- Monitoring
+- Blockchain
+- Smart Contracts
+- dApps
+- Developer Tools
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- aid: blocktorch:blocktorch-hardhat-api
+  name: Blocktorch Hardhat API
+  description: Manage managed Hardhat fork instances.
+  humanURL: https://docs.blocktorch.xyz/concepts/data-sources/local-forks/hardhat-forking-api
+  baseURL: https://c6yaznpyf4.execute-api.us-east-1.amazonaws.com/prod/api
+  tags:
+  - Hardhat
+  properties:
+  - type: OpenAPI
+    url: openapi/blocktorch-hardhat-api-openapi.yml
+  - type: APIReference
+    url: https://docs.blocktorch.xyz/concepts/data-sources/local-forks/hardhat-forking-api
+  - type: ErrorCatalog
+    url: errors/blocktorch-problem-types.yml
 common:
+- type: DeveloperPortal
+  url: https://docs.blocktorch.xyz
+- type: Documentation
+  url: https://docs.blocktorch.xyz
+- type: GettingStarted
+  url: https://docs.blocktorch.xyz/overview/quickstart
+- type: SignUp
+  url: https://beta.blocktorch.xyz
+- type: Blog
+  url: https://medium.com/@blocktorch
+- type: GitHubOrganization
+  url: https://github.com/blocktorch-xyz
+- type: Support
+  url: mailto:contact@blocktorch.xyz
 - type: Website
   url: https://blocktorch.xyz
+- type: LLMsTxt
+  url: llms/blocktorch-llms.txt
+- type: Packages
+  url: packages/blocktorch-packages.yml
+- type: SDKs
+  url: packages/blocktorch-packages.yml
+- type: CLI
+  url: cli/blocktorch-cli.yml
+- type: MCPServer
+  url: mcp/blocktorch-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: WellKnown
+  url: well-known/blocktorch-well-known.yml
+- type: Authentication
+  url: authentication/blocktorch-authentication.yml
+- type: Conventions
+  url: conventions/blocktorch-conventions.yml
+- type: Conformance
+  url: conformance/blocktorch-conformance.yml
+- type: DataModel
+  url: data-model/blocktorch-data-model.yml
+- type: AgenticAccess
+  url: agentic-access/blocktorch-agentic-access.yml
+- type: DomainSecurity
+  url: security/blocktorch-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

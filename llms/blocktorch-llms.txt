@@ -1,0 +1,50 @@
+# blocktorch
+
+## blocktorch
+
+- [Introduction](https://docs.blocktorch.xyz/overview/introduction.md): Blocktorch is an end-to-end observability platform designed specifically for web3 services and products. We aim at taking away the complexity of web3 data and enabling you to take action.
+- [Install/Setup](https://docs.blocktorch.xyz/overview/install-setup.md)
+- [Quickstart](https://docs.blocktorch.xyz/overview/quickstart.md): The fastet way to start observing your dApp and gain valuable insights. No credit card required.No code required.
+- [Data Sources](https://docs.blocktorch.xyz/concepts/data-sources.md): At Blocktorch we believe a hollistic approach to DevOps in web3 is necessary, so instead of pure smart contract observability we are integrating with multiple layers of the architecture of web3
+- [EVM Chains](https://docs.blocktorch.xyz/concepts/data-sources/evm-chains.md)
+- [Roll-ups](https://docs.blocktorch.xyz/concepts/data-sources/roll-ups.md)
+- [Local forks](https://docs.blocktorch.xyz/concepts/data-sources/local-forks.md)
+- [Setup Hardhat fork](https://docs.blocktorch.xyz/concepts/data-sources/local-forks/setup-hardhat-fork.md)
+- [Setup managed Hardhat Fork](https://docs.blocktorch.xyz/concepts/data-sources/local-forks/setup-managed-hardhat-fork.md)
+- [Hardhat forking API](https://docs.blocktorch.xyz/concepts/data-sources/local-forks/hardhat-forking-api.md): Through this API, users can manage Hardhat instances dynamically, providing a seamless integration for continuous development and testing.
+- [Smart Contracts](https://docs.blocktorch.xyz/concepts/data-sources/smart-contracts.md)
+- [Adding smart contracts](https://docs.blocktorch.xyz/concepts/data-sources/smart-contracts/adding-smart-contracts.md)
+- [Custom Event Data](https://docs.blocktorch.xyz/concepts/data-sources/custom-event-data.md)
+- [Oracles](https://docs.blocktorch.xyz/concepts/data-sources/oracles.md)
+- [Account Abstraction modules](https://docs.blocktorch.xyz/concepts/data-sources/account-abstraction-modules.md)
+- [Navigating the AA Explorer](https://docs.blocktorch.xyz/concepts/data-sources/account-abstraction-modules/navigating-the-aa-explorer.md)
+- [Decentralized Datastorage](https://docs.blocktorch.xyz/concepts/data-sources/decentralized-datastorage.md)
+- [React Frontends](https://docs.blocktorch.xyz/concepts/data-sources/react-frontends.md)
+- [Querying data](https://docs.blocktorch.xyz/concepts/querying-data.md)
+- [Telemetry](https://docs.blocktorch.xyz/concepts/telemetry.md)
+- [Searching](https://docs.blocktorch.xyz/use-cases/searching.md)
+- [Logs](https://docs.blocktorch.xyz/use-cases/searching/logs.md)
+- [Log Details](https://docs.blocktorch.xyz/use-cases/searching/logs/log-details.md): Click on a log to expand log details
+- [Sharing search results](https://docs.blocktorch.xyz/use-cases/searching/sharing-search-results.md)
+- [Monitoring](https://docs.blocktorch.xyz/use-cases/monitoring.md)
+- [Building monitors](https://docs.blocktorch.xyz/use-cases/monitoring/building-monitors.md)
+- [Alerting](https://docs.blocktorch.xyz/use-cases/monitoring/alerting.md)
+- [Tracing](https://docs.blocktorch.xyz/use-cases/tracing.md)
+- [Stack traces](https://docs.blocktorch.xyz/use-cases/tracing/stack-traces.md)
+- [End-2-End Traces](https://docs.blocktorch.xyz/use-cases/tracing/end-2-end-traces.md)
+- [Dashboarding](https://docs.blocktorch.xyz/use-cases/dashboarding.md): Dashboards in blocktorch offer a powerful and user-friendly interface that allows to gain insights into data quickly. With dashboards data can be visually tracked and analyzed.
+- [Pre-made dashboards](https://docs.blocktorch.xyz/use-cases/dashboarding/pre-made-dashboards.md): Blocktorch aims at providing the fastest data insights into your dApp stack, so we have created a number of pre-made dashboards throughout the platform based on user feedback.
+- [Custom graphs](https://docs.blocktorch.xyz/use-cases/dashboarding/custom-graphs.md)
+- [Collaborating](https://docs.blocktorch.xyz/use-cases/collaborating.md)
+- [Inviting others](https://docs.blocktorch.xyz/use-cases/collaborating/inviting-others.md)
+- [Sharing data](https://docs.blocktorch.xyz/use-cases/collaborating/sharing-data.md)
+- [Debugging](https://docs.blocktorch.xyz/use-cases/debugging.md)
+- [Step debugger](https://docs.blocktorch.xyz/use-cases/debugging/step-debugger.md)
+- [Benchmarking](https://docs.blocktorch.xyz/use-cases/benchmarking.md)
+- [Managing incidents](https://docs.blocktorch.xyz/use-cases/managing-incidents.md)
+- [Troubelshooting](https://docs.blocktorch.xyz/use-cases/managing-incidents/troubelshooting.md)
+- [Post mortem](https://docs.blocktorch.xyz/use-cases/managing-incidents/post-mortem.md)
+- [Predicting](https://docs.blocktorch.xyz/use-cases/predicting.md): Coming soon....Blocktorch's prediction algorithms are WIP 🔮
+- [Demo videos](https://docs.blocktorch.xyz/ressources/demo-videos.md)
+- [FAQs](https://docs.blocktorch.xyz/ressources/faqs.md): Frequently asked questions
+- [Open Source projects](https://docs.blocktorch.xyz/contribute/open-source-projects.md)

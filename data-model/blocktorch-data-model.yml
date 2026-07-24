@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/blocktorch-hardhat-forking-openapi.yml
+entities:
+- name: Project
+  description: A Blocktorch project that owns API keys and Hardhat fork instances.
+  id_field: projectId
+- name: HardhatInstance
+  description: A managed Hardhat fork instance created against an Ethereum provider URL.
+  id_field: instanceId
+  fields:
+  - providerUrl
+  - chainId
+  - instanceId
+relationships:
+- from: HardhatInstance
+  to: Project
+  type: belongs_to
+  via: projectId
+notes: >-
+  Minimal entity graph derived from the two documented Hardhat Forking API
+  operations. A HardhatInstance is scoped to a projectId (path parameter) and
+  addressed by chainId on delete.
