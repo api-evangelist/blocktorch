@@ -63,6 +63,8 @@ apis:
   - type: ErrorCatalog
     url: errors/blocktorch-problem-types.yml
 common:
+- type: Overlay
+  url: overlays/blocktorch-hardhat-forking-overlay.yaml
 - type: DeveloperPortal
   url: https://docs.blocktorch.xyz
 - type: Documentation
