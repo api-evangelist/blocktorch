@@ -1,0 +1,74 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Blocktorch Forking Hardhat API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Hardhat",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create a managed Hardhat instance",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://c6yaznpyf4.execute-api.us-east-1.amazonaws.com/prod/api/hardhat/:projectId",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path",
+                "description": "The Blocktorch project the Hardhat instance belongs to."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a new managed Hardhat fork instance for the given project. The request body provides the Ethereum provider URL the fork is created against. On success the API returns the instanceId of the new fork."
+        },
+        {
+          "info": {
+            "name": "Delete a managed Hardhat instance",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://c6yaznpyf4.execute-api.us-east-1.amazonaws.com/prod/api/hardhat/:projectId/:chainId",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path",
+                "description": "The Blocktorch project the Hardhat instance belongs to."
+              },
+              {
+                "name": "chainId",
+                "value": "",
+                "type": "path",
+                "description": "The chain id of the Hardhat instance to delete."
+              }
+            ]
+          },
+          "docs": "Delete the managed Hardhat fork instance identified by the project and chain id. Returns a confirmation message on success."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -2,10 +2,9 @@ generated: '2026-07-18'
 method: derived
 status: candidate
 source: openapi/blocktorch-hardhat-forking-openapi.yml
-notes: >-
-  No official hosted/remote Blocktorch MCP server was found (checked docs, npm
-  @blocktorch org, and public MCP registries). This is a candidate tool list
-  derived one-to-one from the documented Hardhat Forking API operations.
+notes: No official hosted/remote Blocktorch MCP server was found (checked docs, npm @blocktorch org, and
+  public MCP registries). This is a candidate tool list derived one-to-one from the documented Hardhat
+  Forking API operations.
 server:
   name: blocktorch
   transport: http
@@ -16,3 +15,9 @@ tools:
 - name: delete_hardhat_instance
   description: Delete a managed Hardhat fork instance by project and chain id.
   source_operation: openapi/blocktorch-hardhat-forking-openapi.yml#deleteHardhatInstance
+deployment:
+  mode: none
+  verified: derived
+  tools: 2
+  checked: '2026-08-12'
+  source: catalog MCP census
