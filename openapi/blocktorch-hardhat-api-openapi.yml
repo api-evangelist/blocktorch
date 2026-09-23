@@ -1,4 +1,4 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
   title: Blocktorch Forking Hardhat API
   description: Manage Hardhat fork instances dynamically through Blocktorch's managed Hardhat forking service. Through this API, users can create and delete Hardhat instances programmatically, providing a seamless integration for continuous development and testing of dApps against forked EVM chains.
@@ -93,6 +93,12 @@ components:
         message:
           type: string
           description: Confirmation message.
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+          description: Error message describing why the request failed.
     CreateHardhatResponse:
       type: object
       properties:
@@ -102,12 +108,6 @@ components:
         message:
           type: string
           description: Confirmation message.
-    Error:
-      type: object
-      properties:
-        error:
-          type: string
-          description: Error message describing why the request failed.
     CreateHardhatRequest:
       type: object
       required:
