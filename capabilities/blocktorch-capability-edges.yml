@@ -1,0 +1,25 @@
+slug: blocktorch
+provider: Blocktorch
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 1
+edges:
+- tag: Hardhat
+  spec_file: blocktorch-hardhat-api-openapi.yml
+  capability_id: BC-4210.20
+  capability_id_l1: BC-4210
+  capability_name: Environment Management
+  confidence: 0.75
+  evidence: '''Create a managed Hardhat instance'' / ''Delete a managed Hardhat instance'' — ''continuous
+    development and testing of dApps against forked EVM chains'''
+  reason: Operations provision and tear down ephemeral forked-chain instances used for development and
+    testing, which is provisioning and stewardship of non-production environments.
