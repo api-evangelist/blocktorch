@@ -96,12 +96,6 @@ components:
         message:
           type: string
           description: Confirmation message.
-    Error:
-      type: object
-      properties:
-        error:
-          type: string
-          description: Error message describing why the request failed.
     Message:
       type: object
       properties:
@@ -117,6 +111,12 @@ components:
           type: string
           description: The Ethereum provider URL the Hardhat fork is created against.
           format: uri
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+          description: Error message describing why the request failed.
   securitySchemes:
     ApiKeyAuth:
       type: apiKey
