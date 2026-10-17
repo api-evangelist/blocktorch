@@ -87,18 +87,18 @@ paths:
                 $ref: '#/components/schemas/Error'
 components:
   schemas:
+    Message:
+      type: object
+      properties:
+        message:
+          type: string
+          description: Confirmation message.
     CreateHardhatResponse:
       type: object
       properties:
         instanceId:
           type: string
           description: Identifier of the created Hardhat fork instance.
-        message:
-          type: string
-          description: Confirmation message.
-    Message:
-      type: object
-      properties:
         message:
           type: string
           description: Confirmation message.
