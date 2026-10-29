@@ -64,6 +64,113 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Blocktorch is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Blocktorch is an end-to-end observability platform built specifically for web3 services and decentralized applications (dApps). It gives engineering teams real-time monitoring of smart contract events, state variables and transaction data, plus log search, alerting, tracing, dashboarding, debugging and collaboration across multiple layers of the web3 stack (EVM chains, roll-ups, local Hardhat forks, oracles, account-abstraction modules and decentralized storage). Blocktorch also exposes a Hardhat Forking API for programmatically managing managed Hardhat fork instances for continuous development and testing. Backed by Speedinvest.
 
-Backed by: speedinvest — https://blocktorch.xyz
+**Areas:** Company · Web3 · Observability · Monitoring · Blockchain · Smart Contracts · DApps · Developer Tools
+
+## Blocktorch on APIs.io
+
+Everything profiled for Blocktorch is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/blocktorch/](https://apis.io/providers/blocktorch/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Blocktorch Hardhat API](https://apis.io/apis/blocktorch/blocktorch-hardhat-api/) — Manage managed Hardhat fork instances.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [blocktorch](https://apis.io/servers/blocktorch/blocktorch/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Blocktorch Agentic Access](https://apis.io/agentic-access/blocktorch/blocktorch-agentic-access/)
+
+#### Collections (1)
+
+Postman and Open Collection request collections.
+
+- [Blocktorch Forking Hardhat API](https://apis.io/collections/blocktorch/open-blocktorch-hardhat-api/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Blocktorch Hardhat Forking Overlay](https://apis.io/overlays/blocktorch/blocktorch-hardhat-forking-overlay/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Blocktorch Authentication](https://apis.io/security/blocktorch/blocktorch-authentication/)
+- [Blocktorch Domain Security](https://apis.io/security/blocktorch/blocktorch-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://blocktorch.xyz)
+- [Documentation](https://docs.blocktorch.xyz)
+- [Getting started](https://docs.blocktorch.xyz/overview/quickstart)
+- [Sign up](https://beta.blocktorch.xyz)
+- [Blog](https://medium.com/@blocktorch)
+- [GitHub](https://github.com/blocktorch-xyz)
+
+## API Evangelist rating
+
+**Kin Score 35.5** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 47.1 |
+| Contract governance | 4.5 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 73.2 |
+| Access clarity | 6.6 |
+
+**Agent readiness 23.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/blocktorch/](https://apis.io/providers/blocktorch/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Blocktorch: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/blocktorch/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
